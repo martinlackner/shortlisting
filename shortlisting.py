@@ -1,4 +1,3 @@
-from misc import str_candsets
 import numpy as np
 
 
@@ -80,19 +79,6 @@ def fullname(name, parameter=None):
     else:
         raise NotImplementedError("Variable multi-winner rule " +
                                   str(name) + " not known")
-
-
-def allrules(profile, include_resolute=False):
-    """Prints the winning committees for all implemented rules"""
-    for rule in VARRULES.keys():
-        print(VARRULES[rule] + ":")
-        com = compute_rule(rule, profile)
-        print(str_candsets(com))
-
-        if include_resolute:
-            print(VARRULES[rule] + " (with tie-breaking):")
-            com = compute_rule(rule, profile, resolute=True)
-            print(str_candsets(com))
 
 
 ########################################################################

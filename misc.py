@@ -6,9 +6,6 @@ https://github.com/martinlackner/abcvoting/blob/master/abcvoting/misc.py
 """
 
 
-from __future__ import print_function
-
-
 def sort_committees(committees):
     """
     sorts a list of committees,
