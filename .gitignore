@@ -1,3 +1,8 @@
 /Shortlisting-experiments*.png
 .idea/
 __pycache__/
+*.png
+*.pickle
+*.pdf
+*.pyc
+venv
